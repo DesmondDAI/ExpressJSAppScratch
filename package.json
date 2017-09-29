@@ -10,7 +10,8 @@
   "author": "DesmondDAI",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "~1.17.1",
     "express": "^4.15.5",
-    "body-parser": "~1.17.1"
+    "mysql": "^2.14.1"
   }
 }
