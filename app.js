@@ -13,9 +13,15 @@ app.use(bodyParser.json())
 
 app.use(birds)
 app.use(user)
+app.set('views', './views')
+app.set('view engine', 'pug')
 
 app.get('/', (req, res) => {
   res.send('GET root')
+})
+
+app.get('/index', (req, res) => {
+  res.render('index', { title: 'Hey', message: 'Hello there! I am message!' })
 })
 
 app.get('/ab?cd', (req, res) => {
