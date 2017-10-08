@@ -1,5 +1,7 @@
 const express = require('express')
 var router = express.Router()
+const mysql = require('./mysql')
+var mysqlConnection = mysql.connection
 
 // Middleware that is specific to this route
 router.use((req, res, next) => {

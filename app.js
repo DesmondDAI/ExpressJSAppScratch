@@ -3,6 +3,7 @@ const bodyParser = require('body-parser')
 const express = require('express')
 const birds = require('./birds')
 const user = require('./user')
+const customer = require('./customer')
 
 const app = express()
 
@@ -13,6 +14,7 @@ app.use(bodyParser.json())
 
 app.use(birds)
 app.use(user)
+app.use(customer)
 app.set('views', './views')
 app.set('view engine', 'pug')
 
